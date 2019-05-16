@@ -1,0 +1,97 @@
+
+
+*{
+    font-family: 'Baloo', cursive;
+}
+
+/* section#wrapper{ */
+    /* background-color: purple */
+    
+/* } */
+
+h1{
+    color: rgb(21, 245, 197);
+    text-shadow: 2px 2px red;
+    font-size: 30px
+}
+
+#cart {
+    position: absolute;
+    right: 0em;
+    font-size: 40px;
+    color:#87dc56;
+    text-shadow: 2px 2px red;
+}
+
+#fas-fa-arrow-left{
+    font-size:40px;
+    text-shadow: 2px 2px red;
+}
+
+/* body{ */
+    /* background-color: purple */
+/* } */
+
+#top{
+    position: relative;
+    display: flex
+}
+#left-section{
+    text-align: center;
+
+}
+#right-section{
+    text-align: center;
+   
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.boxes{
+
+    padding: 20px;
+    background-color: yellow;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin: 70px;
+
+}
+main{
+
+    display: flex;
+    justify-content: space-around;
+}
+
+header{
+    text-align: center;
+    position: relative;
+}
+
+#cart_link{
+    position: absolute;
+    right: 0px;
+}
+
+.boxes{
+
+}
+
+body {
+    background-image: url("burger.jpeg");
+    background-color: #cccccc;
+   }
+
+header{
+    text-align: center;
+}
+
+#fas-fa-arrow-left{
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    width: 50px;
+    height: 50px
+}

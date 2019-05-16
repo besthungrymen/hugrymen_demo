@@ -1,0 +1,53 @@
+*{
+    font-family: 'Baloo', cursive;
+}
+
+section#wrapper{
+    background-color: purple
+    
+}
+
+#cart {
+    position: absolute;
+    right: 0em;
+}
+
+body{
+    background-color: purple
+}
+
+.boxes {
+    display: block;
+
+}
+
+.boxes {
+    height: 90px;
+    display: block;
+    border: 1px solid blue;
+    margin: 10px;
+}
+#cart {
+    position: absolute;
+    right: 0em;
+    font-size: 30px;
+    color:#87dc56;
+    text-shadow: 2px 2px red;
+}
+
+#fas-fa-arrow-left{
+    font-size:30px;
+    text-shadow: 2px 2px red;
+}
+
+#top{
+    position: relative;
+    display: flex
+}
+
+h1{
+    color: rgb(21, 245, 197);
+    text-shadow: 2px 2px red;
+    font-size: 30px;
+    text-align: center;
+}
