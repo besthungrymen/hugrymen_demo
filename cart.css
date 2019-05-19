@@ -1,0 +1,74 @@
+
+
+.product-removal { 
+    text-align: center;
+    padding: 4.5% 0;
+    float: left; 
+    width: 8%; 
+}
+.product-image { 
+    float: left; 
+    max-width: 20%; 
+
+}
+.product-details { 
+    text-align: center;
+
+    float: left; 
+    width: 25%; 
+}
+
+.product-quantity { 
+    text-align: center;
+    padding: 4.5% 0;
+    float: left; 
+    width: 35%; 
+}
+.product-price { 
+    padding: 4.5% 0;
+    float: left; 
+    width: 12%; 
+    text-align: right; 
+}
+
+.product {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #eee;
+    border-width: 1px 0px;
+    border-left: 10px solid #eee;
+    padding: 10px 0px; 
+}
+.total {
+    width: 100%;
+    display: inline-block;
+}
+.total-item{
+    float: right;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.total-item .fee {
+    float: left;
+    width: 75%;
+    text-align: right;
+}
+
+.total-item .value {
+    float: right;
+    width: 25%;
+    text-align: right;
+}
+
+.total-item-total {
+    font-weight: 900;
+}
+
+.checkout {
+    float: right;
+}
+
+.float-right {
+    float: right;
+}

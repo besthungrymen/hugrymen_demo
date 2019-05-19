@@ -8,25 +8,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="./main_page.js"></script>
-    <title>Document</title>
+    <title>HungryMen</title>
 </head>
 <body>
+    <div class="">
         <section id ="wrapper">
-                <header>
-                        <h1> hungry app</h1> 
-                        <br>
-                        <br>
-                        <h1>All resturants in your area</h1>
-            
-            
-                     </header>
-        <section id='left_rating' class='rating'>
+            <header>
+                <h1> hungry app</h1> 
+                <br>
+                <br>
+                <h1>All resturants in your area</h1>
+            </header>
+            <section id='left_rating' class='rating'>
                 <p>Filter:</p> <button id="clear">Clear</button>
-                <p>Deliver my food:</p> <select><option>Today: ASAP</option> 
+                <p>Deliver my food:</p> 
+                <select>
+                    <option>Today: ASAP</option> 
                     <option>Today:30mins</option>
                     <option>Tomorrow:Noon</option>
-
-                
                 </select>
                 <br>
                 <p>Feature</p>
@@ -37,34 +36,34 @@
                 <br>
                 <p>Rating:</p><br>
                 <span class="star-rating star-5">
-               <input type='radio' name='rating' value='one'> <i></i>
-               <!-- name groups all the radio buttons so you can only select one of them,
-            so i can pick one from the rating and one from the price 
-        Span used for stars-->
-            
-            <input type='radio' name='rating' value='two' class="filters"> <i></i>
-            <input type='radio' name='rating' value='three' class="filters"> <i></i>
-            <input type='radio' name='rating' value='four' class="filters"> <i></i>
-            <input type='radio' name='rating' value='five' class="filters"> <i></i>
-        </span>
-            <br>
+                    <input type='radio' name='rating' value='one'> <i></i>
+                    <!-- name groups all the radio buttons so you can only select one of them,
+                    so i can pick one from the rating and one from the price Span used for 
+                    stars
+                    -->
+                
+                    <input type='radio' name='rating' value='two' class="filters"> <i></i>
+                    <input type='radio' name='rating' value='three' class="filters"> <i></i>
+                    <input type='radio' name='rating' value='four' class="filters"> <i></i>
+                    <input type='radio' name='rating' value='five' class="filters"> <i></i>
+                </span>
+                <br>
 
-            Price:<br>
-            <input type='radio' name='price' value='one' class="filters"> 
-            <input type='radio' name='price' value='two' class="filters"> 
-            <input type='radio' name='price' value='three' class="filters"> 
-            <input type='radio' name='price' value='four' class="filters"> 
-            <input type='radio' name='price' value='five' class="filters"> 
-            <br><br>
-        <button id="submit">Submit</button>
+                Price:<br>
+                <input type='radio' name='price' value='one' class="filters"> 
+                <input type='radio' name='price' value='two' class="filters"> 
+                <input type='radio' name='price' value='three' class="filters"> 
+                <input type='radio' name='price' value='four' class="filters"> 
+                <input type='radio' name='price' value='five' class="filters"> 
+                <br><br>
+                <button id="submit">Submit</button>
+            </section>
+            <section id="right_section">
 
-
-
+            </section>
         </section>
-        <section id="right_section">
-
-        </section>
-    </section>
+    </div>
+        
     
 </body>
 </html>

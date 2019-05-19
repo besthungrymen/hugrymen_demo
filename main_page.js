@@ -1,6 +1,8 @@
 // here are my hard-coded list of dictionaries
-var  restaurants = [{"name": "Burger City", "rating": 'two', "price":1, "menu":["pizza", "salad", "burger"], "id": 'burger_city'},
-                    {"name": "Jim's  Pizza", "rating": 'three', "price":1, "menu":["pizza", "salad", "burger"], "id": 'jim_pizza'}]
+var  restaurants = [
+    {"name": "Burger City", "rating": 'two', "price":1, "menu":["pizza", "salad", "burger"], "id": 'burger_city'},
+    {"name": "Jim's  Pizza", "rating": 'three', "price":1, "menu":["pizza", "salad", "burger"], "id": 'jim_pizza'}
+]
 
 $( document ).ready(function() {
     var restaurant = "";
