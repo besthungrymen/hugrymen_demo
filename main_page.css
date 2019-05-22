@@ -191,6 +191,6 @@ box {
     background-size: contain;
   }
   body {
-    background-image: url("purple.jpeg");
+    /* background-image: url("purple.jpeg"); */
     background-color: #cccccc;
    }

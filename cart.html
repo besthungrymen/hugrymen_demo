@@ -1,16 +1,145 @@
-
-<html>
-        <header>
-          <link rel="stylesheet" type="text/css" href="cart.css">
-        </header>
-
-        <section id ="wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- back to previous page or main page? -->
             
+            <a class="navbar-brand" href="./index.html"><i class="fas fa-home"></i>  HungryMen</a>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search Your food!" aria-label="Search">
+                            <a href="./main_page.html" class=""><button class="btn btn-outline-success my-2 my-sm-0" type="button"><i class="fas fa-search"></i></button></a> 
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <span class="navbar-text">
+                <a href="./profile.html" class=""><i class="fas fa-user-circle fa-lg"></i></a> 
+            </span>
+            
+        </nav>
+        <h1>Order Bag</h1>
+        <div class="seller">
+            <p>Burger City</p>
+            <div class="container">
+                <div class="product">
+                    <div class="product-removal">
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    
+                    <div class="product-image">
+                        <img class="img-thumbnail" src="./burger.jpeg" alt="burger" />
+                    </div>
+                    
+                    <div class="product-details">
+                        <p>Common Projects</p>
 
+                        <p>White</p>
+                    </div>
+                    
+                    <div class="product-quantity">
+                        <button class="plus-btn" type="button" name="button">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <input type="text" name="name" value="1">
+                        <button class="minus-btn" type="button" name="button">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="product-price">$ 549</div>
+                </div>
+                <div class="total">
+                    <div class="total-item">
+                        <div class="fee">Subtotal</div> 
+                        <div class="value">$ 999</div>
+                    </div>
+                    <div class="total-item">
+                        <div class="fee">Tax</div> 
+                        <div class="value">$ 999</div>
+                    </div>
+                    <div class="total-item">
+                        <div class="fee">Service Fee</div> 
+                        <div class="value">$ 999</div>
+                    </div>
+                    <div class="total-item">
+                        <div class="fee">Delivery Fee</div> 
+                        <div class="value">$ 999</div>
+                    </div>
+                    <div class="total-item total-item-total">
+                        <div class="fee">Total</div> 
+                        <div class="value">$ 999</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="seller">
+            <p>Jim Pizza</p>
+            <div class="container">
+                <div class="product">
+                    <div class="product-removal">
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    <div class="product-image">
+                        <img class="img-thumbnail" src="./pizza.jpeg" alt="burger" />
+                    </div>
+                    <div class="product-details">
+                        <p>Common Projects</p>
+                        <p>White</p>
+                    </div>
+                    <div class="product-quantity">
+                        <button class="plus-btn" type="button" name="button">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <input type="text" name="name" value="1">
+                        <button class="minus-btn" type="button" name="button">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                    <div class="product-price">$ 549</div>
+                </div>
+            </div>
+            <div class="total">
+                <div class="total-item">
+                    <div class="fee">Subtotal</div> 
+                    <div class="value">$ 999</div>
+                </div>
+                <div class="total-item">
+                    <div class="fee">Tax</div> 
+                    <div class="value">$ 999</div>
+                </div>
+                <div class="total-item">
+                    <div class="fee">Service Fee</div> 
+                    <div class="value">$ 999</div>
+                </div>
+                <div class="total-item">
+                    <div class="fee">Delivery Fee</div> 
+                    <div class="value">$ 999</div>
+                </div>
+                <div class="total-item total-item-total">
+                    <div class="fee">Total</div> 
+                    <div class="value">$ 999</div>
+                </div>
+            </div>
+        </div>
 
-
-                <footer>
-                        <a href="index.html">Go Back</a>
-                      </footer>
-        </section>
+        <div>
+            <a class="btn btn-primary" href="javascript:history.back()">Go Back</a>
+            <a class="btn btn-success checkout" href="checkout.html">CHECK OUT</a>
+        </div>
+    </div>
+</body>
 </html>
