@@ -16,20 +16,20 @@
   position: relative;
   display: inline-block;
 }
-.p-info-wrapper {
+#p-info-wrapper {
   position: relative;
 }
-.a-info-wrapper {
+#a-info-wrapper {
   position: relative;
 }
-.pay-info-wrapper {
+#pay-info-wrapper {
   position: relative;
 }
 .total-due {
   position: relative;
   left: 10px;
 }
-.card-save {
+#card-save {
   position: relative;
   top: 8px;
 }
