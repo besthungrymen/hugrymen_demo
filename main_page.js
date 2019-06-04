@@ -1,8 +1,14 @@
 // here are my hard-coded list of dictionaries
 var  restaurants = [
-    {"name": "Burger City", "rating": 'two', "price":1, "menu":["pizza", "salad", "burger"], "id": 'burger_city'},
+    // keep track of the index from the menu list
+    // storing all the items like this we cant generate it all dynamically add another resturant or items 
+    // and now you generate a menu dynamically
+    // will have one page for resturants and itll just changew from that. 
+    {"name": "Burger City", "rating": 'two', "price":1, "menu":[{name: "Bacon Burger", price: "$10.99"} ,{name: "Avocado Burger", price:"$9.99"} , {name:"Vegan Cheese Burger", price:"$11.99"}, "appetizers, "], "id": 'burger_city'},
     {"name": "Jim's  Pizza", "rating": 'three', "price":1, "menu":["pizza", "salad", "burger"], "id": 'jim_pizza'}
 ]
+// makes an array of the items to pick w/e items we want.
+console.log("burger_city-3".split("-"));
 
 $( document ).ready(function() {
     var restaurant = "";
@@ -35,5 +41,5 @@ $( document ).ready(function() {
             }
         }
         $("#right_section").html(restaurant);
-    })
+    });
 });

@@ -21,6 +21,8 @@ body{
     display: block;
     border: 1px solid blue;
     margin: 10px;
+    color: rgb(21, 245, 197);
+    text-shadow: 2px 2px red;
 }
 
 #right_section{
