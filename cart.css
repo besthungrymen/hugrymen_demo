@@ -72,3 +72,19 @@
 .float-right {
     float: right;
 }
+
+/* .delete{
+    color: #dc3545;
+    background: white
+} */
+
+.delete:hover{
+    cursor: pointer;
+    color: #f63b54;
+    background: white
+}
+
+/* .delete:active{
+    color: #ff0019;
+    background: white
+} */
