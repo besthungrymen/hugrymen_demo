@@ -8,7 +8,8 @@
     </header>
     
     <body>
-         <section id ="wrapper">
+        <section id ="wrapper" style="background-image: url('./background_burger.jpg'); background-position: center; background-color: yellow " >
+
              
              <header>
                 <h1>Burgers</h1> 
@@ -25,27 +26,55 @@
                <section id='topbox'> 
               
                  <section id='box1' class='boxes'>
-                    <p>Bacon Burger: </p>
-                    <p> Applewood smoked Bacon, BBQ Sauce, Cheddar, and red onions.</p>
-                    
+                    <div class="d-inline-block">
+                        <p><input type='checkbox' name="burger_city-1"/> Applewood Burger: </p>
+                        <p> Applewood smoked Bacon, BBQ Sauce, Cheddar, and red onions.</p>
+                    </div>
+                    <img src="./bacon_burger.jpg" style="
+                            height: 80px;
+                            float: right;
+                            margin: 10px;
+                        ">
+                                
                     
                 </section>
                  
                  <section id='box2' class='boxes'>
-                    <p>Avacado Burger: </p>
+                    <img src="./avocado_burger.jpg" style="
+                    height: 80px;
+                    float: right;
+                    margin: 10px;
+                ">
+                    <p><input type='checkbox' name="burger_city-2"/> Avocado Burger: </p>
                     <p>Chipotle mayo, cherry peppers, pepper Jack avacado, lettuce, and red onion.</p>
+
+                    
                  </section>
                  
                  <section id='box3' class='boxes'>
-                    <p>Vegan Cheese Burger: </p>
+                    <img src="./vegan_option.jpeg" style="
+                            height: 80px;
+                            float: right;
+                            margin: 10px;
+                        ">
+                   <!-- check box took out the name of burger -->
+                    <p><input type='checkbox' name="burger_city-3"/> Vegan Cheese Burger: </p>
                     <p>vegan cheddar, lettuce, Tomato and red onion.</p>
                     
+                    
                  </section>
+                 
                 </section>
                  
                  
              </main>
-            <footer>
+            <footer id='bottom_box'>
+          <!-- trying to connect all the checkboxes to the add to cart so they then show up in the cart page
+          trying to flag the food select by the user and transfer them to the cart.html,
+        want to do that so that I can dynamically change the items in my cart (aka remove or add more)
+      thinking to do this maybe add another JSON file to store the order detail that is added to the cart
+    and maybe the cart page can just retireve the order information from the Json file and list them in the cart?? -->
+                <a id="add to cart" >add to cart</a>
             </footer>
         </section>
     
