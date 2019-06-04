@@ -1,0 +1,113 @@
+.split-person-wrapper {
+
+}
+.split-name {
+  position: relative;
+  display: inline-block;
+}
+.split-total {
+  position: relative;
+  display: inline-block;
+}
+.split-button {
+  position: relative;
+}
+.total-due {
+  position: relative;
+  display: inline-block;
+}
+.p-info-wrapper {
+  position: relative;
+}
+.a-info-wrapper {
+  position: relative;
+}
+.pay-info-wrapper {
+  position: relative;
+}
+.total-due {
+  position: relative;
+  left: 10px;
+}
+.card-save {
+  position: relative;
+  top: 8px;
+}
+.white-space {
+  position: relative;
+  bottom: -50px;
+  height: 90px;
+}
+#checkout-form {
+  position: relative;
+  left: 30px;
+  top: 20px;
+}
+#personal_info_wrapper {
+  position: relative;
+  top: 5px;
+}
+#address_wrapper {
+  position: relative;
+  top: 25px;
+}
+#payment_wrapper {
+  position: relative;
+  top: 40px;
+}
+#meal_split {
+  position: relative;
+  top: 35px;
+}
+#sub-checkout {
+  position: relative;
+  top: 45px;
+  background: #28A745;
+  height: 60px;
+  width: 220px;
+  border: none;
+  border-radius: 4px;
+  font-size: 2.2em;
+  font-weight: 500;
+}
+#d-inst {
+  position: relative;
+}
+#split-b {
+  position: relative;
+  left: 275px;
+  background: #28A745;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  width: 75px;
+}
+#states {
+  position: relative;
+  height: 30px;
+}
+#checkout-t {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+#user-note {
+  position: relative;
+  left: 30px;
+  top: 10px;
+  color: gray;
+}
+select {
+  -webkit-appearance: menulist-button;
+  color: black;
+}
+select:invalid {
+  color: gray;
+}
+select:disabled {
+  color: gray;
+}
+span {
+  color: red;
+  font-weight: bold;
+}

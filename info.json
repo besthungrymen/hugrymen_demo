@@ -1,0 +1,233 @@
+{
+  "restaurants":[
+    {
+      "name":"Burger City",
+      "foods":{
+        "burger":[
+          {
+            "name": "Bacon Burger",
+            "intro": "Applewood smoked Bacon, BBQ Sauce, Cheddar, and red onions.",
+            "img": "./image/bacon_burger.jpg",
+            "price": 10
+          },
+          { 
+            "name": "Avacado Burger",
+            "intro": "Chipotle mayo, cherry peppers, pepper Jack avacado, lettuce, and red onion.",
+            "img": "./image/avocado_burger.jpg",
+            "price": 10
+          },
+          {
+            "name": "Vegan Cheese Burger",
+            "intro": "vegan cheddar, lettuce, Tomato and red onion.",
+            "img": "./image/vegan_option.jpeg",
+            "price": 10
+          }
+        ],
+        "appertize":[
+          {
+            "name": "Chili",
+            "img": "./image/chili.jpg",
+            "price" : 10.5
+          },
+          {
+            "name": "BBQ Pork Fries",
+            "img": "./image/pork_fries_option.jpg",
+            "price": 13
+          },
+          {
+            "name": "Fried Pickles",
+            "img": "./image/fried_pickles_option.jpeg",
+            "price": 7
+          },
+          {
+            "name": "Side of Fries ",
+            "img": "./image/fries.jpg",
+            "price": 3
+          },
+          {
+            "name": "Buffalo Chicken Tenders",
+            "img": "./image/Buffalo-Chicken-Tenders_option.jpg",
+            "price": 7
+          },
+          {
+            "name": "House Made Potato Chips",
+            "img": "./image/potato-chips_option.jpg",
+            "price": 4
+          }
+        ],
+        "salad":[
+          {
+            "name": "House Salad",
+            "intro": "Red leaf lettuce, cucumber carrot, red onion, cherry tomato, and house made vinaigrette.",
+            "img": "./image/house_salad.jpg",
+            "price": 10
+          },
+          {
+            "name": "Wedge Salad",
+            "intro": "Iceberg, lettuce, bleu cheese dressing, lemon vinaigrette, cherry tomato and frizzled red onion.",
+            "img": "./image/wedge_salad.png",
+            "price": 10
+          },
+          {
+            "name": "Caesar Salad",
+            "intro": "Romaine lettuce,house made caesar parmesan and cayenne cortons.",
+            "img": "./image/Caesar_salad.jpg",
+            "price": 10
+          }
+        ],
+        "sandwich":[
+          {
+            "name": "Hot Chicken Sandwich",
+            "intro": "Applewood smoked Bacon, BBQ Sauce, Cheddar, and red onions.",
+            "img": "./image/hot_chicken_sandwich.jpg",
+            "price": 10
+          },
+          {
+            "name": "Italian BMT",
+            "intro": "Chipotle mayo, cherry peppers, pepper Jack avacado, lettuce, and red onion.",
+            "img": "./image/BMT_sandwich.jpeg",
+            "price": 10
+          }
+        ],
+        "macandcheese":[
+          {
+            "name": "original Mac and Cheese",
+            "intro": "Applewood smoked Bacon, BBQ Sauce, Cheddar, and red onions.",
+            "img": "./image/mac_option.jpg",
+            "price": 10
+          },
+          {
+            "name": "bacon mac and cheese",
+            "intro": "the classic with shredded bacon smothered with mozzarella cheese.",
+            "img": "./image/bacon_mac_cheesE_option.jpg",
+            "price": 10
+          }
+        ],
+        "beverage":[
+          {
+            "name": "Sprecher Cherry Cola",
+            "img": "./image/cherry_cola.jpg",            
+            "price": 4
+          },
+          {
+            "name": "Sprecher Cream Soda",
+            "img": "./image/cream_soda.png",
+            "price": 4
+          },
+          {
+            "name": "Sprecher Orange Dream Soda",
+            "img": "./image/orange_dream.png",
+            "price": 4
+          },
+          {
+            "name": "Sprecher Gorilla Grape Soda",
+            "img": "./image/gorilla_grape.jpg",
+            "price": 4
+          }
+        ]
+      }
+    },
+    {
+      "name":"Jim's Pizza",
+      "foods": {
+        "pizza": [
+          {
+            "name": "Pepperoni",
+            "img": "./image/pep_option.png",            
+            "price": 0.75
+          },
+          {
+            "name": "White Meat Chicken",
+            "img": "./image/whitemeat_option.jpg",
+            "price": 1.45
+          },
+          {
+            "name": "Italian Sausage",
+            "img": "./image/",
+            "price": 0.80
+          },
+          {
+            "name": "Mushrooms",
+            "img": "./image/mush_option.jpg",
+            "price": 0.30
+          },
+          {
+            "name": "Canadian Bacon",
+            "img": "./image/",
+            "price": 0.75
+          },
+          {
+            "name": "Green Peppers",
+            "img": "./image/peppr_option.jpg",
+            "price": 0.40
+          }
+        ],
+        "drink": [
+          {
+            "name": "Coke",
+            "img": "./image/coke_option.png",
+            "price": 1.65
+          },
+          {
+            "name": "BBQ Pork Fries",
+            "img": "./image/pork_fries_option.jpg",
+            "price": 1.65
+          },
+          {
+            "name": "Diet Coke",
+            "img": "./image/diet_coke.jpg",
+            "price": 1.65
+          },
+          {
+            "name": "Side of Fries",
+            "img": "./image/fries.jpg",
+            "price": 1.65
+          },
+          {
+            "name": "Lemon Lime",
+            "img": "./image/lime.jpeg",
+            "price": 1.65
+          },
+          {
+            "name": "House Made Potato Chips",
+            "img": "./image/potato-chips_option.jpg",
+            "price": 1.65
+          }
+
+        ],
+        "dessert": [
+          {
+            "name": "Chocalate Ice Cream",
+            "img": "./image/chocalate.jpeg",
+            "price": 6
+          },
+          {
+            "name": "Mint Chip Ice Cream",
+            "img": "./image/mint_option.jpg",
+            "price": 4
+          },
+          {
+            "name": "Vanilla Ice Cream",
+            "img": "./image/vanilla.jpg",
+            "price": 4
+          },
+          {
+            "name": "Cookies n' Cream Ice Cream",
+            "img": "./image/cookiesandcream_option.jpg",
+            "price": 4
+          },
+          {
+            "name": "West Town Bakery Chocalate chip cookie",
+            "img": "./",
+            "price": 4
+          },
+          {
+            "name": "West Town Bakery Rice Krispie treat",
+            "img": ".",
+            "price": 4
+          }
+        ]
+      }
+    }
+  ]
+}
