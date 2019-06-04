@@ -16,7 +16,7 @@
 
 h1{
   text-align: center;
-  color: rgb(21, 245, 197);
+  color: #67ff89;
   text-shadow: 2px 2px red;
   font-size: 30px
 }
@@ -105,6 +105,7 @@ p{
     display: inline-block;
     width: 20%;
     padding: 10px;
+    background-color: rgba(0, 255, 0, .75);
     
     /* padding for bootstrap to space out */
 }
@@ -115,6 +116,7 @@ p{
 }
 
 box {
+  background-color: rgba(0, 255, 0, .75);
     height: 50px;
     display: block;
     border: 1px solid blue;
@@ -191,6 +193,6 @@ box {
     background-size: contain;
   }
   body {
-    /* background-image: url("purple.jpeg"); */
+    background-image: url("food.jpg");
     background-color: #cccccc;
    }

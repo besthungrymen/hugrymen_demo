@@ -8,9 +8,13 @@ section#wrapper{
 }
 
 
-body{
-    /* background-color: purple */
-}
+body {
+    background-image: url("./Jim_Pizza.png");
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center;
+    background-color: orange;
+   }
 
 .boxes {
     display: block;
@@ -22,6 +26,10 @@ body{
     display: block;
     border: 1px solid blue;
     margin: 10px;
+}
+p{
+    color: rgb(21, 245, 197);
+    text-shadow: 2px 2px red;
 }
 
 #right_section{

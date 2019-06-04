@@ -52,7 +52,7 @@ button:hover{
 .boxes{
 
     padding: 20px;
-    background-color: yellow;
+    background-color: orangered;
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
@@ -82,6 +82,7 @@ header{
 body {
     /* background-image: url("burger.jpeg"); */
     background-color: #cccccc;
+    margin: 0;
    }
 
 header{
@@ -94,4 +95,7 @@ header{
     left: 0px;
     width: 50px;
     height: 50px
+}
+.menuItem {
+    height: 125px;
 }
