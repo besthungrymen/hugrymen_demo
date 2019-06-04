@@ -1,0 +1,45 @@
+{
+    "items":
+    [
+        {
+            "name": "Burger City",
+            "order": [
+                {
+                    "name": "Bacon Burger",
+                    "img": "./image/bacon_burger.jpg",
+                    "number": 1,
+                    "price": 10
+                },
+                {
+                    "name": "Vegan Cheese Burger",
+                    "img": "./image/vegan_option.jpeg",
+                    "number": 1,
+                    "price": 10
+                }   
+            ]
+        },
+        {
+            "name": "Jim's Pizza",
+            "order": [
+                {
+                    "name": "Chocalate Ice Cream",
+                    "img": "./image/chocalate.jpeg",
+                    "number": 1,
+                    "price": 6
+                },
+                {
+                    "name": "Mint Chip Ice Cream",
+                    "img": "./image/mint_option.jpg",
+                    "number": 1,
+                    "price": 4
+                },
+                {
+                    "name": "Cookies n' Cream Ice Cream",
+                    "img": "./image/cookiesandcream_option.jpg",
+                    "number": 1,
+                    "price": 4
+                }
+            ]
+        }
+    ]
+}
