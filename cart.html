@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cart</title>
-    <link rel="stylesheet" href="./cart.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./cart.css">
 </head>
 <body>
     <div class="container">
@@ -25,22 +25,30 @@
                     </li>
                 </ul>
             </div>
-            <span class="navbar-text">
+            <!-- <span class="navbar-text">
                 <a href="./profile.html" class=""><i class="fas fa-user-circle fa-lg"></i></a> 
-            </span>
+            </span> -->
             
         </nav>
-        <h1>Order Bag</h1>
-        <div class="seller">
+
+        <h1 class="cart-head">Your Order Bag</h1>
+        <div id="seller-list" class="">
+            
+        </div>
+        <div id="cart-total"></div>
+        <br>
+        <br>
+
+        <!-- <div class="seller">
             <p>Burger City</p>
             <div class="container">
-                <div class="product">
+                <div id="Bacon Burger" class="product">
                     <div class="product-removal">
-                        <i class="fas fa-trash"></i>
+                        <i class="fas fa-trash delete"></i>
                     </div>
                     
                     <div class="product-image">
-                        <img class="img-thumbnail" src="./burger.jpeg" alt="burger" />
+                        <img class="img-thumbnail" src="./image/bacon_burger.jpg" alt="burger" />
                     </div>
                     
                     <div class="product-details">
@@ -53,7 +61,7 @@
                         <button class="plus-btn" type="button" name="button">
                             <i class="fas fa-plus"></i>
                         </button>
-                        <input type="text" name="name" value="1">
+                        <input id="Bacon Burger input" class="text-center"  type="text" name="name" value="1">
                         <button class="minus-btn" type="button" name="button">
                             <i class="fas fa-minus"></i>
                         </button>
@@ -89,9 +97,9 @@
         <div class="seller">
             <p>Jim Pizza</p>
             <div class="container">
-                <div class="product">
+                <div id="pizza" class="product">
                     <div class="product-removal">
-                        <i class="fas fa-trash"></i>
+                        <i class="fas fa-trash delete"></i>
                     </div>
                     <div class="product-image">
                         <img class="img-thumbnail" src="./pizza.jpeg" alt="burger" />
@@ -134,12 +142,20 @@
                     <div class="value">$ 999</div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div>
             <a class="btn btn-primary" href="javascript:history.back()">Go Back</a>
             <a class="btn btn-success checkout" href="checkout.html">CHECK OUT</a>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+    <script src="./cart.js"></script>
+
 </body>
 </html>
