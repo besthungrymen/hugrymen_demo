@@ -209,6 +209,7 @@ function buildCartListHelper() {
                     <div class="value">$ ${total.toFixed(2)}</div>
                 </div>
             `;
+            
             totalDiv.innerHTML = totalinput;
             sellerDiv.appendChild(totalDiv);
             // we done, add this to our cartList
