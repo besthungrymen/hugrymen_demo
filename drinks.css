@@ -10,6 +10,11 @@ section#wrapper{
 
 body{
     /* background-color: purple */
+        background-image: url("./Jim_Pizza.png");
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+        background-position: center;
+        background-color: orange;
 }
 
 .boxes {
@@ -18,10 +23,15 @@ body{
 }
 
 .boxes {
-    height: 90px;
+    height: 110px;
     display: block;
     border: 1px solid blue;
-    margin: 10px;
+    margin: 50px;
+}
+
+p{
+    color: rgb(21, 245, 197);
+    text-shadow: 2px 2px red;
 }
 
 #right_section{
@@ -37,7 +47,7 @@ body{
     position: absolute;
     left: 0px;
     width: 50px;
-    height: 50px;
+    height: 30px;
     font-size:30px;
     text-shadow: 2px 2px red;
 }
