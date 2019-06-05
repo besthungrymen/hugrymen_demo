@@ -1,6 +1,12 @@
 regex = /^\d+\s[A-z]+\s[A-z]+/g
 url = "./main_page.html"
 
+$.getJSON('./cart.json', function(data){
+    localStorage.setItem("cart", JSON.stringify(data));
+});
+
+
+
 $('#search').keypress(function (e) {
     if (e.keyCode == 13) {
         // get the value in the input check every character to see if it is valid
