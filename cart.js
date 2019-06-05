@@ -1,13 +1,8 @@
 var cart;
+var cartObj;
 var subtotalTotal = 0;
 var feeTotal = 0;
 
-function writeBackToFile(json) {
-    var fs = require('fs');
-    fs.writeFile('./cart.json', json, 'utf8', function(){
-        alert("write to file finish.");
-    });
-}
 
 function delItemFromJson(itemName, sellerName) {
     // console.log("======")
@@ -30,13 +25,11 @@ function delItemFromJson(itemName, sellerName) {
             }
         }
     }
+    localStorage.setItem("cart", JSON.stringify(cartObj));
     // console.log(cart);
-    // writeBackToFile(cart);
-    buildCartListHelper();
+    buildCartList();
 }
 function changeItemNumberFromJson(itemName, sellerName, count) {
-    console.log("itemName = ", itemName);
-    console.log("sellerName = ", sellerName);
     for ( let i = 0; i < cart.length; i++ ) {
         if ( cart[i]["name"] == sellerName) {
             var order = cart[i]["order"];
@@ -45,23 +38,26 @@ function changeItemNumberFromJson(itemName, sellerName, count) {
                 // console.log(order[i]);
                 if (order[j]["name"] === itemName) {
                     order[j]["number"] += count;
-                    console.log("name =", order[j]["name"])
-                    console.log(order[j]["number"])
                 }
             }
         }
     }
+    localStorage.setItem("cart", JSON.stringify(cartObj));
     // console.log(cart);
-    // writeBackToFile(cart);
-    buildCartListHelper();
+    buildCartList();
 }
 
 // load them from cart.json file 
 function buildCartList() {
-    $.getJSON('./cart.json', function(data){
-        cart = data["items"];
-        buildCartListHelper();
-    });
+    // $.getJSON('./cart.json', function(data){
+    //     // console.log(typeof(data))
+    //     cart = data["items"];
+        
+    // });
+    cartObj = JSON.parse(localStorage.getItem("cart"))
+    cart = cartObj["items"];
+    console.log(cart);
+    buildCartListHelper();   
 }
 
 function buildCartListHelper() {
@@ -209,6 +205,7 @@ function buildCartListHelper() {
                     <div class="value">$ ${total.toFixed(2)}</div>
                 </div>
             `;
+
             totalDiv.innerHTML = totalinput;
             sellerDiv.appendChild(totalDiv);
             // we done, add this to our cartList
