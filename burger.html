@@ -4,6 +4,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="burger.css">
     </header>
     
@@ -27,7 +28,7 @@
               
                  <section id='box1' class='boxes'>
                     <div class="d-inline-block">
-                        <p><input type='checkbox' name="burger_city-1"/> Applewood Burger: </p>
+                        <p><input id="Bacon Burger" type='checkbox' name="burger_city-1"/> Bacon Burger: </p>
                         <p> Applewood smoked Bacon, BBQ Sauce, Cheddar, and red onions.</p>
                     </div>
                     <img src="./image/bacon_burger.jpg" style="
@@ -45,7 +46,7 @@
                     float: right;
                     margin: 10px;
                 ">
-                    <p><input type='checkbox' name="burger_city-2"/> Avocado Burger: </p>
+                    <p><input id="Avocado Burger" type='checkbox' name="burger_city-2"/> Avocado Burger: </p>
                     <p>Chipotle mayo, cherry peppers, pepper Jack avacado, lettuce, and red onion.</p>
 
                     
@@ -58,7 +59,7 @@
                             margin: 10px;
                         ">
                    <!-- check box took out the name of burger -->
-                    <p><input type='checkbox' name="burger_city-3"/> Vegan Cheese Burger: </p>
+                    <p><input id="Vegan Cheese Burger" type='checkbox' name="burger_city-3"/> Vegan Cheese Burger: </p>
                     <p>vegan cheddar, lettuce, Tomato and red onion.</p>
                     
                     
@@ -68,20 +69,18 @@
                  
                  
              </main>
-            <footer id='bottom_box'>
-          <!-- trying to connect all the checkboxes to the add to cart so they then show up in the cart page
+             <!-- trying to connect all the checkboxes to the add to cart so they then show up in the cart page
           trying to flag the food select by the user and transfer them to the cart.html,
         want to do that so that I can dynamically change the items in my cart (aka remove or add more)
       thinking to do this maybe add another JSON file to store the order detail that is added to the cart
     and maybe the cart page can just retireve the order information from the Json file and list them in the cart?? -->
-                <a id="add to cart" >add to cart</a>
-            </footer>
+              <a id="add-to-cart-box" class="btn btn-primary" href="#">Add to cart</a>
         </section>
     
     </body>
     
     <!-- Note: We put this at the end of the page so that the rest of the HTML loads first -->
-    <script>
-      //script for javascript  
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./script/getCheckedBoxes.js"></script>
+    <script src="./burger.js"></script>
     </html>

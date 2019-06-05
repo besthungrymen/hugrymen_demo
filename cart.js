@@ -1,9 +1,15 @@
+// THIS SCRIPT is based on cart.js and localStorage
+
 var cart;
 var cartObj;
 var subtotalTotal = 0;
 var feeTotal = 0;
 
 
+/*
+ * This function is used to delete items in the cart, 
+ * called by *trash icon* onclick function
+ */
 function delItemFromJson(itemName, sellerName) {
     // console.log("======")
     // console.log(itemName);
@@ -56,7 +62,7 @@ function buildCartList() {
     // });
     cartObj = JSON.parse(localStorage.getItem("cart"))
     cart = cartObj["items"];
-    console.log(cart);
+    // console.log(cart);
     buildCartListHelper();   
 }
 
