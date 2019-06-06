@@ -32,7 +32,7 @@
 
              </nav>
             <header>
-              <h1 id="checkout-t">Checkout</h1>
+              <h1  class="checkout-head">Checkout</h1>
               <p id="user-note"><span>*</span> indicates a required field</p>
             </header>
             <!-- FIGURE OUT HOW TO GET DATA FROM CART, PROFILE, AND OLD SAVED CARDS
@@ -46,7 +46,7 @@
                   <label for="last_name">Last Name:<span>*</span>:</label>
                   <input class="mandatory" id="last_name" type="text" name="last_name" required/>
                   <label for="phone">Phone Number<span>*</span>:</label>
-                  <input class="mandatory" type="text" name="phone" placeholder="XXX XXX XXXX" pattern="^([0-9]( |-)?)?(\(?[0-9]{3}\)?|[0-9]{3})( |-)?([0-9]{3}( |-)?[0-9]{4}|[a-zA-Z0-9]{7})$" maxlength="12" size="12" required/>
+                  <input class="mandatory" type="text" name="phone" placeholder="XXX XXX XXXX" pattern="^([0-9]( |-)?)?(\(?[0-9]{3}\)?|[0-9]{3})( |-)?([0-9]{3}( |-)?[0-9]{4}|[a-zA-Z0-9]{7})$" maxlength="12" size="14" required/>
                 </div>
               </section>
               <section id="address_wrapper">
@@ -112,7 +112,7 @@
                        <option value="WY">WY</option>
                    </select>
                   <label for="zip">Zip<span>*</span>:</label>
-                  <input class="mandatory" id="zip" type="text" name="zip" placeholder="XXXXX" pattern="^[0-9]{5}$" maxlength="5" size="5" required/>
+                  <input class="mandatory" id="zip" type="text" name="zip" placeholder="XXXXX" pattern="^[0-9]{5}$" maxlength="5" size="6" required/>
                 </div>
               <br>
               <textarea id="d-inst" name="delivery_instructions" placeholder="Enter delivery instructions." rows="4" cols="50"></textarea>
@@ -121,13 +121,13 @@
                 <h2>Payment</h2>
                 <div class="pay-info-wrapper">
                   <label for="card_number">Card Number<span>*</span>:</label>
-                  <input type="text" id="card_number" name="card_number" placeholder="XXXX XXXX XXXX XXXX" pattern="^((4\d{3})|(5[1-5]\d{2})|(6011)|(34\d{1})|(37\d{1}))-?\s?\d{4}-?\s?\d{4}-?\s?\d{4}|3[4,7][\d\s-]{15}$" maxlength="19" size="20" required/>
+                  <input type="text" id="card_number" name="card_number" placeholder="XXXX XXXX XXXX XXXX" pattern="^((4\d{3})|(5[1-5]\d{2})|(6011)|(34\d{1})|(37\d{1}))-?\s?\d{4}-?\s?\d{4}-?\s?\d{4}|3[4,7][\d\s-]{15}$" maxlength="19" size="22" required/>
                   <label for="card_name">Name on Card<span>*</span>:</label>
                   <input type="text" id="card_name" name="card_name" required/>
                   <label for="expiration_date">Expiration<span>*</span>:</label>
-                  <input type="text" id="expiration_date" name="expiration_date" placeholder="MM/YY" pattern="^(1[0-2]|0[1-9])\/(1[5-9]|2\d)$" maxlength="5" size="5" required/>
+                  <input type="text" id="expiration_date" name="expiration_date" placeholder="MM/YY" pattern="^(1[0-2]|0[1-9])\/(1[5-9]|2\d)$" maxlength="5" size="6" required/>
                   <label for="cvv">CVV<span>*</span>:</label>
-                  <input type="text" id="cvv" name="cvv" placeholder="XXX" pattern="^[0-9]{3}$" maxlength="3" size="3" required/>
+                  <input type="text" id="cvv" name="cvv" placeholder="XXX" pattern="^[0-9]{3}$" maxlength="3" size="4" required/>
                 </div>
                 <div class="card-save">
                   <input id="save_card" type="checkbox">        <!-- probably will need a function to save card info; add to checkout button -->
@@ -156,6 +156,7 @@
               </section>
             -->
               <br>
+            <a href="./cart.html"><button id="sub-goback" type="button">Go Back</button></a> 
             <button id="sub-checkout" type="submit">Place Order</button>
           </form>
           <div class="white-space"></div>

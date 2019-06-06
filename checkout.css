@@ -71,6 +71,18 @@
   font-weight: 500;
   color: white;
 }
+#sub-goback {
+  position: relative;
+  top: 45px;
+  background: #007bff;
+  height: 60px;
+  width: 220px;
+  border-color: #007bff;
+  border-radius: 4px;
+  font-size: 2.2em;
+  font-weight: 500;
+  color: white;
+}
 #d-inst {
   position: relative;
 }
@@ -111,4 +123,11 @@ select:disabled {
 span {
   color: red;
   font-weight: bold;
+}
+
+.checkout-head {
+  padding: 3% 0;
+  text-align: center;
+  color: cornflowerblue;
+  font-size: 3rem;
 }
