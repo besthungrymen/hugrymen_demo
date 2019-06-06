@@ -116,3 +116,7 @@ function checkout() {
   alert("Your order has been placed and your food is on the way. Enjoy!");
   window.location.href = "./index.html";
 }
+
+var userinputvalue = localStorage.getItem("userinput");
+var userinputtag = document.getElementById("user-input")
+userinputtag.value = userinputvalue;

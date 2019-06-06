@@ -425,3 +425,7 @@ $('#checkoutBtn').click(function(){
         return false
     }
 });
+
+var userinputvalue = localStorage.getItem("userinput");
+var userinputtag = document.getElementById("user-input")
+userinputtag.value = userinputvalue;

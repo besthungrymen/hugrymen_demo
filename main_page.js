@@ -45,6 +45,5 @@ $( document ).ready(function() {
 });
 
 var userinputvalue = localStorage.getItem("userinput");
-console.log(userinputvalue);
 var userinputtag = document.getElementById("user-input")
 userinputtag.value = userinputvalue;
