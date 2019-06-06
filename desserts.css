@@ -33,11 +33,13 @@ p{
 }
 
 #right_section{
-    display: inline-block
+    display: inline-block;
+    vertical-align: top;
 }
 
 #left_section{
-    display: inline-block
+    display: inline-block;
+    vertical-align: top;
 }
 
 #fas-fa-arrow-left{
