@@ -123,6 +123,8 @@ select:disabled {
 }
 
 .meal_split {
+  width: 375px;
+  right: -315px;
   position: relative;
   top: 35px;
 }
@@ -135,12 +137,14 @@ select:disabled {
   border-radius: 4px;
   height: 30px;
   width: 75px;
+  color: white;
 }
 
 .total-due {
   position: relative;
   display: inline-block;
   left: 10px;
+  font-weight: bold;
 }
 
 .split-person-wrapper {
@@ -155,4 +159,14 @@ select:disabled {
 .split-total {
   position: relative;
   display: inline-block;
+}
+
+.user-note {
+  position: relative;
+  height: 35px;
+}
+
+.space {
+  position: relative;
+  height: 60px;
 }

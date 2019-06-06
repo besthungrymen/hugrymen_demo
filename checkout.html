@@ -14,8 +14,8 @@
 <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <!-- back to previous page or main page? -->
-      
-                 <a class="navbar-brand" href="./main_page.html"><i class="fas fa-home"></i>  HungryMen</a>
+
+                 <a class="navbar-brand" href="./index.html"><i class="fas fa-home"></i>  HungryMen</a>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav mr-auto">
                         <li>
@@ -29,7 +29,7 @@
                 <!-- <span class="navbar-text">
                     <a href="./profile.html" class=""><i class="fas fa-user-circle fa-lg"></i></a>
                 </span> -->
-      
+
              </nav>
             <header>
               <h1 id="checkout-t">Checkout</h1>
@@ -41,71 +41,78 @@
               <section id="personal_info_wrapper">
                 <h2>Personal Information</h2>
                 <div class="p-info-wrapper">
-                  <input class="mandatory" type="text" name="first_name" placeholder="First Name" required/><span>*</span>
-                  <input class="mandatory" type="text" name="last_name" placeholder="Last Name" required/><span>*</span>
-                  <input class="mandatory" type="text" name="phone" placeholder="Phone Number" pattern="^([0-9]( |-)?)?(\(?[0-9]{3}\)?|[0-9]{3})( |-)?([0-9]{3}( |-)?[0-9]{4}|[a-zA-Z0-9]{7})$" maxlength="11" size="20" required/><span>*</span>
+                  <label for="first_name">First Name<span>*</span>:</label>
+                  <input class="mandatory" id="first_name" type="text" name="first_name" required/>
+                  <label for="last_name">Last Name:<span>*</span>:</label>
+                  <input class="mandatory" id="last_name" type="text" name="last_name" required/>
+                  <label for="phone">Phone Number<span>*</span>:</label>
+                  <input class="mandatory" type="text" name="phone" placeholder="XXX XXX XXXX" pattern="^([0-9]( |-)?)?(\(?[0-9]{3}\)?|[0-9]{3})( |-)?([0-9]{3}( |-)?[0-9]{4}|[a-zA-Z0-9]{7})$" maxlength="12" size="12" required/>
                 </div>
               </section>
               <section id="address_wrapper">
                 <h2>Address</h2>
                 <div class="a-info-wrapper">
-                  <input class="mandatory" type="text" name="address" placeholder="Address" required/><span>*</span>
-                  <input class="mandatory" type="text" name="city" placeholder="City" required/><span>*</span>
+                  <label for="address">Address<span>*</span>:</label>
+                  <input class="mandatory" id="address" type="text" name="address" placeholder="123 Main Street" pattern="^\d+\s[A-z]+\s[A-z]+" required/>
+                  <label for="city">City<span>*</span>:</label>
+                  <input class="mandatory" id="city" type="text" name="city" required/>
+                  <label for="states">State<span>*</span>:</label>
                   <select id="states" class="mandatory" name="state" required>
-                     <option value="" selected>State</option>
-                     <option value="AL">Alabama</option>
-                       <option value="AK">Alaska</option>
-                       <option value="AZ">Arizona</option>
-                       <option value="AR">Arkansas</option>
-                       <option value="CA">California</option>
-                       <option value="CO">Colorado</option>
-                       <option value="CT">Connecticut</option>
-                       <option value="DE">Delaware</option>
-                       <option value="DC">District Of Columbia</option>
-                       <option value="FL">Florida</option>
-                       <option value="GA">Georgia</option>
-                       <option value="HI">Hawaii</option>
-                       <option value="ID">Idaho</option>
-                       <option value="IL">Illinois</option>
-                       <option value="IN">Indiana</option>
-                       <option value="IA">Iowa</option>
-                       <option value="KS">Kansas</option>
-                       <option value="KY">Kentucky</option>
-                       <option value="LA">Louisiana</option>
-                       <option value="ME">Maine</option>
-                       <option value="MD">Maryland</option>
-                       <option value="MA">Massachusetts</option>
-                       <option value="MI">Michigan</option>
-                       <option value="MN">Minnesota</option>
-                       <option value="MS">Mississippi</option>
-                       <option value="MO">Missouri</option>
-                       <option value="MT">Montana</option>
-                       <option value="NE">Nebraska</option>
-                       <option value="NV">Nevada</option>
-                       <option value="NH">New Hampshire</option>
-                       <option value="NJ">New Jersey</option>
-                       <option value="NM">New Mexico</option>
-                       <option value="NY">New York</option>
-                       <option value="NC">North Carolina</option>
-                       <option value="ND">North Dakota</option>
-                       <option value="OH">Ohio</option>
-                       <option value="OK">Oklahoma</option>
-                       <option value="OR">Oregon</option>
-                       <option value="PA">Pennsylvania</option>
-                       <option value="RI">Rhode Island</option>
-                       <option value="SC">South Carolina</option>
-                       <option value="SD">South Dakota</option>
-                       <option value="TN">Tennessee</option>
-                       <option value="TX">Texas</option>
-                       <option value="UT">Utah</option>
-                       <option value="VT">Vermont</option>
-                       <option value="VA">Virginia</option>
-                       <option value="WA">Washington</option>
-                       <option value="WV">West Virginia</option>
-                       <option value="WI">Wisconsin</option>
-                       <option value="WY">Wyoming</option>
-                   </select><span>*</span>
-                  <input class="mandatory" type="text" name="zip" placeholder="Zip" pattern="^[0-9]{5}$" maxlength="5" size="5" required/><span>*</span>
+                     <option value="" selected></option>
+                     <option value="AL">AL</option>
+                       <option value="AK">AK</option>
+                       <option value="AZ">AZ</option>
+                       <option value="AR">AR</option>
+                       <option value="CA">CA</option>
+                       <option value="CO">CO</option>
+                       <option value="CT">CT</option>
+                       <option value="DE">DE</option>
+                       <option value="DC">DC</option>
+                       <option value="FL">FL</option>
+                       <option value="GA">GA</option>
+                       <option value="HI">HI</option>
+                       <option value="ID">ID</option>
+                       <option value="IL">IL</option>
+                       <option value="IN">IN</option>
+                       <option value="IA">IA</option>
+                       <option value="KS">KS</option>
+                       <option value="KY">KY</option>
+                       <option value="LA">LA</option>
+                       <option value="ME">ME</option>
+                       <option value="MD">MD</option>
+                       <option value="MA">MA</option>
+                       <option value="MI">MI</option>
+                       <option value="MN">MN</option>
+                       <option value="MS">MS</option>
+                       <option value="MO">MO</option>
+                       <option value="MT">MT</option>
+                       <option value="NE">NE</option>
+                       <option value="NV">NV</option>
+                       <option value="NH">NH</option>
+                       <option value="NJ">NJ</option>
+                       <option value="NM">NM</option>
+                       <option value="NY">NY</option>
+                       <option value="NC">NC</option>
+                       <option value="ND">ND</option>
+                       <option value="OH">OH</option>
+                       <option value="OK">OK</option>
+                       <option value="OR">OR</option>
+                       <option value="PA">PA</option>
+                       <option value="RI">RI</option>
+                       <option value="SC">SC</option>
+                       <option value="SD">SD</option>
+                       <option value="TN">TN</option>
+                       <option value="TX">TX</option>
+                       <option value="UT">UT</option>
+                       <option value="VT">VT</option>
+                       <option value="VA">VA</option>
+                       <option value="WA">WA</option>
+                       <option value="WV">WV</option>
+                       <option value="WI">WI</option>
+                       <option value="WY">WY</option>
+                   </select>
+                  <label for="zip">Zip<span>*</span>:</label>
+                  <input class="mandatory" id="zip" type="text" name="zip" placeholder="XXXXX" pattern="^[0-9]{5}$" maxlength="5" size="5" required/>
                 </div>
               <br>
               <textarea id="d-inst" name="delivery_instructions" placeholder="Enter delivery instructions." rows="4" cols="50"></textarea>
@@ -113,10 +120,14 @@
               <section id="payment_wrapper">
                 <h2>Payment</h2>
                 <div class="pay-info-wrapper">
-                  <input type="text" name="card_number" placeholder="Card Number" pattern="^[0-9]{16}$" maxlength="16" size="16" required/><span>*</span>
-                  <input type="text" name="card_name" placeholder="Name on Card" required/><span>*</span>
-                  <input type="text" name="expiration_date" placeholder="MM/YY" pattern="^([0-9]{2})\/([0-9]{2})$" maxlength="5" size="5" required/><span>*</span>
-                  <input type="text" name="cvv" placeholder="CVV" pattern="^[0-9]{3}$" maxlength="3" size="3" required/><span>*</span>
+                  <label for="card_number">Card Number<span>*</span>:</label>
+                  <input type="text" id="card_number" name="card_number" placeholder="XXXX XXXX XXXX XXXX" pattern="^((4\d{3})|(5[1-5]\d{2})|(6011)|(34\d{1})|(37\d{1}))-?\s?\d{4}-?\s?\d{4}-?\s?\d{4}|3[4,7][\d\s-]{15}$" maxlength="19" size="20" required/>
+                  <label for="card_name">Name on Card<span>*</span>:</label>
+                  <input type="text" id="card_name" name="card_name" required/>
+                  <label for="expiration_date">Expiration<span>*</span>:</label>
+                  <input type="text" id="expiration_date" name="expiration_date" placeholder="MM/YY" pattern="^(1[0-2]|0[1-9])\/(1[5-9]|2\d)$" maxlength="5" size="5" required/>
+                  <label for="cvv">CVV<span>*</span>:</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="XXX" pattern="^[0-9]{3}$" maxlength="3" size="3" required/>
                 </div>
                 <div class="card-save">
                   <input id="save_card" type="checkbox">        <!-- probably will need a function to save card info; add to checkout button -->
@@ -124,6 +135,7 @@
                 </div>
               </section>
               <br>
+              <!--
               <section id="meal_split">
                 <h2>Split</h2>
                 <input type="checkbox" id="split_q" onclick="checkAlert()"/>
@@ -142,6 +154,7 @@
                 <br>
                 <div id="split_fields"/>
               </section>
+            -->
               <br>
             <button id="sub-checkout" type="submit">Place Order</button>
           </form>

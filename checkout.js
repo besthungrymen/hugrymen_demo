@@ -1,3 +1,4 @@
+/*
 var splitters = [
   {
     name: "Person 1",
@@ -110,7 +111,8 @@ function split() {
     alert("Item costs must add up to the total cost of the items in your cart before fees!")
   }
 }
+*/
 function checkout() {
   alert("Your order has been placed and your food is on the way. Enjoy!");
-  window.location.href = "./main_page.html";
+  window.location.href = "./index.html";
 }

@@ -265,6 +265,7 @@ function buildCartListHelper() {
                     </select>
                   <br>
                   <div id="${split_fields_id}"/>
+                  <div class="space"/>
                 </div>
             `;
 
@@ -333,6 +334,8 @@ function callbackClosure(i, j, k, callback) {
     var grey_label_id = "grey-label-" + idN;
     var num_people_id = "num_people_" + idN;
     var split_fields_id = "split_fields_" + idN;
+    var fees = tax + servicefee + deliveryfee;
+    fees = roundToTwo(fees);
     var numP = document.getElementById(num_people_id);
     var p = parseInt(numP.options[numP.selectedIndex].value);
     var fields = document.getElementById(split_fields_id);
@@ -345,9 +348,10 @@ function callbackClosure(i, j, k, callback) {
       person.classList.add("split-person-wrapper");
       var inputs = `
                     <div class="split-name">${splitters[i].name}</div>
-                    <label for="${person_id}">Item Total: $</label>
+                    <label for="${person_id}">Subtotal: $</label>
                     <input class="split-total" id="${person_id}" type="number" min="0" max="1000" step=".01" pattern="\d{1,3}(?:[.,]\d{3})*(?:[.,]\d{2})?" placeholder="0.00">
                     <div class="total-due" id="tot${person_id}">Total Due: $</div>
+                    <div class="user-note" id="note${person_id}"></div>
                    `;
       person.innerHTML = inputs;
       fields.appendChild(person);     //create fields for a new person
@@ -357,10 +361,12 @@ function callbackClosure(i, j, k, callback) {
     var b = `<button id="split-b${idN}" class="split-b" type="button" onclick="split(${idN},${tax},${subtotal},${servicefee},${deliveryfee})">Split</button>`;
     splitB.innerHTML = b;
     fields.appendChild(splitB);       //creates split button under fields
+    var space = document.createElement('div');
+    space.classList.add("space");
+    fields.appendChild(space);
   }
 
   function split(idN,tax,subtotal,servicefee,deliveryfee) {
-    //SOMEHOW I NEED TO GET ITEM TOTAL AND TAXES/FEES FROM CART, WILL JUST USE PLACEHOLDER VARIABLES FOR NOW
     var split_q_id = "split_q_" + idN;
     var grey_label_id = "grey-label-" + idN;
     var num_people_id = "num_people_" + idN;
@@ -371,9 +377,9 @@ function callbackClosure(i, j, k, callback) {
       var tmp = "Person_" + p + "_" + idN;
     } while (document.getElementById(tmp) != null);
     p -= 1;
-    var total = subtotal;  //this needs to change
+    var total = subtotal;
     var tmpTot = 0;   //this will count vals as we loop, will be checked against actual total taken from cart
-    var fees = tax + servicefee + deliveryfee;     //this needs to change
+    var fees = tax + servicefee + deliveryfee;
     var wrap = document.getElementById(split_fields_id);
     var percents = new Array(p);
     var tCosts = new Array(p);
@@ -381,16 +387,20 @@ function callbackClosure(i, j, k, callback) {
       var name = "Person_" + i + "_" + idN;
       var cost = parseInt(document.getElementById(name).value);
       tmpTot += cost;
-      percents[i-1] = cost / total;                   //this will not work until I know how to get total from cart
-      tCosts[i-1] = cost + (percents[i-1] * fees);    //this will not work until I know how to get total from cart
+      percents[i-1] = cost / total;
+      tCosts[i-1] = cost + (percents[i-1] * fees);
     }
-    if (tmpTot == total) {                                       //will be tmpTot == total but this will not work until I have real total value
+    if (tmpTot == total) {
       for (var i = 1; i <= p; i++) {
         var name = "totPerson_" + i + "_" + idN;
+        var noteN = "notePerson_" + i + "_" + idN;
         var due = roundToTwo(tCosts[i-1]);
         var val = "Total Due: $" + due;
+        var mes = "Person " + i + " is paying $" + (percents[i-1] * fees) + " of $" + fees + " taxes and fees";
         var elem = document.getElementById(name);
         elem.innerHTML = val;
+        var elem2 = document.getElementById(noteN);
+        elem2.innerHTML = mes;
       }
     } else {          //if the item totals are not correct
       alert("Item costs must add up to the total cost of the items in your cart before fees!")
