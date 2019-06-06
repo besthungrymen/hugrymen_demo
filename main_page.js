@@ -43,3 +43,8 @@ $( document ).ready(function() {
         $("#right_section").html(restaurant);
     });
 });
+
+var userinputvalue = localStorage.getItem("userinput");
+console.log(userinputvalue);
+var userinputtag = document.getElementById("user-input")
+userinputtag.value = userinputvalue;

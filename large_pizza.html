@@ -1,9 +1,10 @@
-
 <html>
 <header>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/cart-bounce.css">
   <link rel="stylesheet" type="text/css" href="large_pizza.css">
 </header>
 
@@ -14,7 +15,7 @@
             <h1>18" Large Jimmy's Pizza</h1> 
     
             <h2>Our delicious Pizza dough smothered with our fresh pizza sauce and covered with our New York cheese blend.</h2>
-            <p><input type='checkbox' name="jim_pizza-1"/> $18.00 </p>
+            <p><input id="Large Pizza" type='checkbox' checked=true  name="jim_pizza-1"/> $18.00 </p>
             <br>
             
 
@@ -35,7 +36,7 @@
                     float: right;
                     margin: 10px;
                 ">
-                    <p><input type='checkbox' name="jim_pizza-2"/> Pepperoni + $0.75 </p>
+                    <p><input id="Pepperoni" type='checkbox' name="jim_pizza-2"/> Pepperoni + $0.75 </p>
             </section>
              
              <section id='box2' class='boxes'>
@@ -44,7 +45,7 @@
                     float: right;
                     margin: 10px;
                 ">
-                    <p><input type='checkbox' name="jim_pizza-3"/> Italian Sausage + $0.80 </p>
+                    <p><input id="Italian Sausage" type='checkbox' name="jim_pizza-3"/> Italian Sausage + $0.80 </p>
                 </section>
 
                 <section id='box3' class='boxes'>
@@ -53,7 +54,7 @@
                         float: right;
                         margin: 10px;
                     ">
-                        <p><input type='checkbox' name="jim_pizza-4"/> Canadian Bacon  + $0.75 </p>
+                        <p><input id="Canadian Bacon" type='checkbox' name="jim_pizza-4"/> Canadian Bacon  + $0.75 </p>
              </section>
 
           
@@ -66,7 +67,7 @@
                         float: right;
                         margin: 10px;
                     ">
-                        <p><input type='checkbox' name="jim_pizza-5"/> White Meat Chicken  + $1.45 </p>
+                        <p><input id="White Meat Chicken" type='checkbox' name="jim_pizza-5"/> White Meat Chicken  + $1.45 </p>
                 </section>
                  
                  <section id='box5' class='boxes'>
@@ -75,7 +76,7 @@
                         float: right;
                         margin: 10px;
                     ">
-                        <p><input type='checkbox' name="jim_pizza-6"/> Mushrooms + $0.30 </p>
+                        <p><input id="Mushrooms" type='checkbox' name="jim_pizza-6"/> Mushrooms + $0.30 </p>
                 
                     </section>
     
@@ -85,22 +86,22 @@
                             float: right;
                             margin: 10px;
                         ">
-                            <p><input type='checkbox' name="jim_pizza-7"/> Green Peppers + $0.40 </p>
+                            <p><input id="Green Peppers" type='checkbox' name="jim_pizza-7"/> Green Peppers + $0.40 </p>
                  </section>
 
               </section>
              
              
          </main>
+         <button id="add-to-cart-box" class="btn btn-primary">Add to cart</button>
+
         <footer>
          
         </footer>
     </section>
 
 </body>
-
-<!-- Note: We put this at the end of the page so that the rest of the HTML loads first -->
-<script>
-  //script for javascript  
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="./script/getCheckedBoxes.js"></script>
+  <script src="./large_pizza.js"></script>
 </html>

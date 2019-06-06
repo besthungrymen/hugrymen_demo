@@ -4,6 +4,7 @@ var cartObj = JSON.parse(localStorage.getItem("cart"));
 var cart = cartObj["items"];
 var seller;
 var sellerName = "Burger City";
+var foodName = "macandcheese";
 
 $('#add-to-cart-box').click(function(){
     // get all checked boxes
@@ -65,7 +66,7 @@ function getOrderList() {
 function getItemsList(info) {
     for ( let i = 0; i < info.length; i++ ) {
         if ( info[i]["name"] == sellerName ) {
-            return info[i]["foods"]["burger"];
+            return info[i]["foods"][foodName];
         }
     }
 }

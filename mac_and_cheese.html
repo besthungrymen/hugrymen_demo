@@ -5,6 +5,8 @@
   <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="mac_and_cheese.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/cart-bounce.css">
 </header>
 
 <body>
@@ -30,19 +32,19 @@
                 float: right;
                 margin: 10px;
             ">
-                <p><input type='checkbox' name="burger_city-15"/> original mac and cheese </p>
+                <p><input id="original Mac and Cheese" type='checkbox' name="burger_city-15"/> original mac and cheese </p>
                 <p> The burger city classic.</p>
                 
                 
             </section>
              
              <section id='box2' class='boxes'>
-                    <img src="./image/bacon_mac_cheese_option.jpg" style="
+                    <img src="./image/bacon_mac_cheesE_option.jpg" style="
                     height: 80px;
                     float: right;
                     margin: 10px;
                 ">
-                <p><input type='checkbox' name="burger_city-16"/> bacon mac and cheese </p>
+                <p><input id="bacon mac and cheese" type='checkbox' name="burger_city-16"/> bacon mac and cheese </p>
                 
                 <p>the classic with shredded bacon smothered with mozzarella cheese.</p>
              </section>
@@ -52,14 +54,14 @@
              
              
          </main>
+         <button id="add-to-cart-box" class="btn btn-primary">Add to cart</button>
         <footer>
         </footer>
     </section>
 
 </body>
 
-<!-- Note: We put this at the end of the page so that the rest of the HTML loads first -->
-<script>
-  //script for javascript  
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="./script/getCheckedBoxes.js"></script>
+  <script src="./mac_and_cheese.js"></script>
 </html>
