@@ -227,6 +227,7 @@ function buildCartListHelper() {
             var grey_label_id = "grey-label-" + i;
             var num_people_id = "num_people_" + i;
             var split_fields_id = "split_fields_" + i;
+            var tax = taxrate * subtotal;
             totalinput = `
                 <div class="total-item">
                     <div class="fee">Subtotal</div>
