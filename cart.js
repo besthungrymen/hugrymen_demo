@@ -396,7 +396,7 @@ function callbackClosure(i, j, k, callback) {
         var noteN = "notePerson_" + i + "_" + idN;
         var due = roundToTwo(tCosts[i-1]);
         var val = "Total Due: $" + due;
-        var mes = "Person " + i + " is paying $" + (percents[i-1] * fees) + " of $" + fees + " taxes and fees";
+        var mes = "Person " + i + " is paying $" + roundToTwo((percents[i-1] * fees)) + " of $" + fees + " taxes and fees";
         var elem = document.getElementById(name);
         elem.innerHTML = val;
         var elem2 = document.getElementById(noteN);
