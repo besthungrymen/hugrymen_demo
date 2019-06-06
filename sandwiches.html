@@ -4,7 +4,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="Sandwiches.css">
+  <link rel="stylesheet" type="text/css" href="sandwiches.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/cart-bounce.css">
 </header>
 
 <body>
@@ -31,19 +33,19 @@
                 float: right;
                 margin: 10px;
             ">
-                <p><input type='checkbox' name="burger_city-13"/> hot chicken  sandwich </p>
+                <p><input id="Hot Chicken Sandwich" type='checkbox' name="burger_city-13"/> hot chicken  sandwich </p>
                 <p> Applewood smoked Bacon, BBQ Sauce, Cheddar, and red onions.</p>
                 
                 
             </section>
              
              <section id='box2' class='boxes'>
-                <img src="./image/bmt_sandwich.jpeg" style="
+                <img src="./image/BMT_sandwich.jpeg" style="
                 height: 80px;
                 float: right;
                 margin: 10px;
             ">
-                <p><input type='checkbox' name="burger_city-14"/> Italian BMT </p>
+                <p><input id="Italian BMT" type='checkbox' name="burger_city-14"/> Italian BMT </p>
                 <p>Chipotle mayo, cherry peppers, pepper Jack avacado, lettuce, and red onion.</p>
              </section>
              
@@ -52,14 +54,14 @@
              
              
          </main>
+         <button id="add-to-cart-box" class="btn btn-primary">Add to cart</button>
         <footer>
         </footer>
     </section>
 
 </body>
 
-<!-- Note: We put this at the end of the page so that the rest of the HTML loads first -->
-<script>
-  //script for javascript  
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="./script/getCheckedBoxes.js"></script>
+  <script src="./sandwiches.js"></script>
 </html>

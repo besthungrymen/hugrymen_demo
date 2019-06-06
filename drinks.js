@@ -3,7 +3,8 @@ var checkedbox = [];
 var cartObj = JSON.parse(localStorage.getItem("cart"));
 var cart = cartObj["items"];
 var seller;
-var sellerName = "Burger City";
+var sellerName = "Jim's Pizza";
+var foodName = "drink";
 
 $('#add-to-cart-box').click(function(){
     // get all checked boxes
@@ -21,7 +22,7 @@ $('#add-to-cart-box').click(function(){
     if ( orderlist == undefined) {
         orderlist = []
         jsonObj = {
-            name: "Burger City",
+            name: sellerName,
             order: orderlist
         }
         cart.push(jsonObj)
@@ -65,7 +66,7 @@ function getOrderList() {
 function getItemsList(info) {
     for ( let i = 0; i < info.length; i++ ) {
         if ( info[i]["name"] == sellerName ) {
-            return info[i]["foods"]["burger"];
+            return info[i]["foods"][foodName];
         }
     }
 }
