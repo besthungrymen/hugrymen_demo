@@ -65,7 +65,7 @@ function getOrderList() {
 function getItemsList(info) {
     for ( let i = 0; i < info.length; i++ ) {
         if ( info[i]["name"] == sellerName ) {
-            return info[i]["foods"]["burger"];
+            return info[i]["foods"]["salad"];
         }
     }
 }

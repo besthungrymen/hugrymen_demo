@@ -40,7 +40,7 @@
             "price": 7
           },
           {
-            "name": "Side of Fries ",
+            "name": "Side of Fries",
             "img": "./image/fries.jpg",
             "price": 3
           },
@@ -131,6 +131,11 @@
       "name":"Jim's Pizza",
       "foods": {
         "pizza": [
+          {
+            "name": "Large Pizza",
+            "img": "./pizza.jpeg",
+            "price": 18.00
+          },
           {
             "name": "Pepperoni",
             "img": "./image/pep_option.png",            

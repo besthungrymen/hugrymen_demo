@@ -4,7 +4,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="appetizers.css">
+  <link rel="stylesheet" type="text/css" href="./css/cart-bounce.css">
+
 </header>
 
 <body>
@@ -30,7 +33,7 @@
                     float: right;
                     margin: 10px;
                 ">
-                <input type='checkbox' name="burger_city-4">Chili + $10.50<br>
+                <input id="Chili" type='checkbox' name="burger_city-4">Chili + $10.50<br>
                 
             </section>
              
@@ -40,7 +43,7 @@
                     float: right;
                     margin: 10px;
                 ">
-                <input type='checkbox' name="burger_city-5">Fried Pickles + $7.00<br>
+                <input id="Fried Pickles" type='checkbox' name="burger_city-5">Fried Pickles + $7.00<br>
                 </section>
 
                 <section id='box3' class='boxes'>
@@ -49,7 +52,7 @@
                         float: right;
                         margin: 10px;
                     ">
-                    <input type='checkbox' name="burger_city-6">Buffalo Chicken Tenders  + $7.00<br>
+                    <input id="Buffalo Chicken Tenders" type='checkbox' name="burger_city-6">Buffalo Chicken Tenders  + $7.00<br>
              </section>
 
           
@@ -62,7 +65,7 @@
                         float: right;
                         margin: 10px;
                     ">
-                    <input type='checkbox' name="burger_city-7">BBQ Pork Fries  + $13.00<br>
+                    <input id="BBQ Pork Fries" type='checkbox' name="burger_city-7">BBQ Pork Fries  + $13.00<br>
                     
                 </section>
                 
@@ -72,7 +75,7 @@
                         float: right;
                         margin: 10px;
                     ">
-                    <input type='checkbox' name="burger_city-8">Side of Fries + $3.00<br>
+                    <input id="Side of Fries" type='checkbox' name="burger_city-8">Side of Fries + $3.00<br>
                     </section>
     
                     <section id='box3' class='boxes'>
@@ -81,13 +84,14 @@
                             float: right;
                             margin: 10px;
                         ">
-                        <input type='checkbox' name="burger_city-9">House Made Potato Chips  + $4.00<br>
+                        <input id="House Made Potato Chips" type='checkbox' name="burger_city-9">House Made Potato Chips  + $4.00<br>
                  </section>
 
               </section>
              
              
          </main>
+         <button id="add-to-cart-box" class="btn btn-primary">Add to cart</button>
         <footer>
          
         </footer>
@@ -95,8 +99,7 @@
 
 </body>
 
-<!-- Note: We put this at the end of the page so that the rest of the HTML loads first -->
-<script>
-  //script for javascript  
-</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="./script/getCheckedBoxes.js"></script>
+  <script src="./appetizers.js"></script>
 </html>
