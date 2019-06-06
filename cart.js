@@ -38,7 +38,7 @@ var cart;
 var cartObj;
 var subtotalTotal = 0;
 var feeTotal = 0;
-
+var url = './checkout.html'
 
 /*
  * This function is used to delete items in the cart,
@@ -196,7 +196,7 @@ function buildCartListHelper() {
                 countDiv.appendChild(countminusbtn);
                 // product price
                 var priceinput = `
-                $ ${productCount * productPrice}
+                $ ${(productCount * productPrice).toFixed(2)}
                 `;
                 subtotal += productCount * productPrice;
                 var priceDiv = document.createElement('div');
@@ -413,3 +413,15 @@ function callbackClosure(i, j, k, callback) {
 
 
 buildCartList();
+
+$('#checkoutBtn').click(function(){
+    var sellerLen = cart.length;
+    if ( sellerLen == 0 )  {
+        alert("You have nothing to checkout, man!");
+        return true;
+    }
+    else {
+        location.href = url;
+        return false
+    }
+});
