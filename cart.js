@@ -320,7 +320,7 @@ function callbackClosure(i, j, k, callback) {
       addPeople(idN,tax,subtotal,servicefee,deliveryfee);                                                    //add fields for people splitting bill
     } else {                                                     //if unchecked
       document.getElementById(grey_label_id).style.color = "gray";     //change color of dropdown label to black
-      document.getElementById(num_peope_id).disabled = true;          //enable dropdown
+      document.getElementById(num_people_id).disabled = true;          //enable dropdown
       var wrap = document.getElementById(split_fields_id);
       while (wrap.hasChildNodes()) {                                 //remove all fields for people
         wrap.removeChild(wrap.lastChild);
