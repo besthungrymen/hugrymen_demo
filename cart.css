@@ -1,34 +1,34 @@
 
 
-.product-removal { 
+.product-removal {
     text-align: center;
     padding: 4.5% 0;
-    float: left; 
-    width: 8%; 
+    float: left;
+    width: 8%;
 }
-.product-image { 
-    float: left; 
-    max-width: 20%; 
+.product-image {
+    float: left;
+    max-width: 20%;
 
 }
-.product-details { 
+.product-details {
     text-align: center;
 
-    float: left; 
-    width: 25%; 
+    float: left;
+    width: 25%;
 }
 
-.product-quantity { 
+.product-quantity {
     text-align: center;
     padding: 4.5% 0;
-    float: left; 
-    width: 35%; 
+    float: left;
+    width: 35%;
 }
-.product-price { 
+.product-price {
     padding: 4.5% 0;
-    float: left; 
-    width: 12%; 
-    text-align: right; 
+    float: left;
+    width: 12%;
+    text-align: right;
 }
 
 .product {
@@ -37,7 +37,7 @@
     border: 1px solid #eee;
     border-width: 1px 0px;
     border-left: 10px solid #eee;
-    padding: 10px 0px; 
+    padding: 10px 0px;
 }
 .total {
     width: 100%;
@@ -71,4 +71,39 @@
 
 .float-right {
     float: right;
+}
+
+.meal_split {
+  position: relative;
+  top: 35px;
+}
+
+.split-b {
+  position: relative;
+  left: 275px;
+  background: #28A745;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  width: 75px;
+}
+
+.total-due {
+  left: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.split-person-wrapper {
+
+}
+
+.split-name {
+  position: relative;
+  display: inline-block;
+}
+
+.split-total {
+  position: relative;
+  display: inline-block;
 }
