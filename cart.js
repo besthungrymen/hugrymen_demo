@@ -387,7 +387,8 @@ function callbackClosure(i, j, k, callback) {
     if (tmpTot == total) {                                       //will be tmpTot == total but this will not work until I have real total value
       for (var i = 1; i <= p; i++) {
         var name = "totPerson_" + i + "_" + idN;
-        var val = "Total Due: $" + tCosts[i-1];
+        var due = roundToTwo(tCosts[i-1]);
+        var val = "Total Due: $" + due;
         var elem = document.getElementById(name);
         elem.innerHTML = val;
       }
@@ -395,6 +396,10 @@ function callbackClosure(i, j, k, callback) {
       alert("Item costs must add up to the total cost of the items in your cart before fees!")
     }
   }
+
+  function roundToTwo(num) {
+    return +(Math.round(num + "e+2")  + "e-2");
+}
 
 
 buildCartList();
